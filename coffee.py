@@ -8,7 +8,7 @@ class CoffeeApp(object):
             "app_name": "Coffee",
             "start": "Start Timer",
             "stop": "Stop Timer",
-            "interval_secs": 10,
+            "interval_secs": 120,
         }
         self.app = rumps.App(self.config["app_name"])
         self.timer = rumps.Timer(self.on_tick, 1)
