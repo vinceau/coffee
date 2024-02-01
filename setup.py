@@ -9,7 +9,7 @@ OPTIONS = {
         'CFBundleShortVersionString': '0.2.0',
         'LSUIElement': True,
     },
-    'includes': ['rumps', 'pyatuogui'],
+    'packages': ['rumps', 'pyautogui'],
     'excludes': ['rubicon']
 }
 
