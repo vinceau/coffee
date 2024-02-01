@@ -16,7 +16,8 @@ class CoffeeApp(object):
         self.set_up_menu()
         self.start_stop_button = rumps.MenuItem(title=self.config["start"], callback=self.start_timer)
         self.app.menu = [self.start_stop_button]
-        self.start_timer()
+        self.reset_timer()
+        self.timer.start()
 
     def set_up_menu(self):
         self.timer.stop()
