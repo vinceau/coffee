@@ -5,8 +5,8 @@ class CoffeeApp(object):
     def __init__(self):
         self.config = {
             "app_name": "Coffee",
-            "start": "Start Timer",
-            "stop": "Stop Timer",
+            "start": "Start",
+            "stop": "Stop",
             "interval_secs": 120,
         }
         self.app = rumps.App(self.config["app_name"])
