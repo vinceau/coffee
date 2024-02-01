@@ -1,5 +1,4 @@
 import pyautogui as pag
-import time
 import rumps
 
 class CoffeeApp(object):
