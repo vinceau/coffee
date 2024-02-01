@@ -1,8 +1,8 @@
-### Coffee
+# Coffee ☕️
 
 A simple [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) / Caffeinate alternative written in Python.
 
-This app simulates mouse movement very subtly (by 1px), once two minutes, preventing the computer from sleeping.
+This app simulates activity by moving the mouse ever so subtly (by 1px), once every two minutes, thus preventing the computer from sleeping.
 
 ### Pre-requisites
 
