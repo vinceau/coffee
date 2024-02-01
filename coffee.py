@@ -8,11 +8,11 @@ class CoffeeApp(object):
             "app_name": "Coffee",
             "start": "Start Timer",
             "stop": "Stop Timer",
-            "interval": 10,
+            "interval_secs": 10,
         }
         self.app = rumps.App(self.config["app_name"])
         self.timer = rumps.Timer(self.on_tick, 1)
-        self.interval = self.config["interval"]
+        self.interval_secs = self.config["interval_secs"]
         self.set_up_menu()
         self.start_stop_button = rumps.MenuItem(title=self.config["start"], callback=self.start_timer)
         self.app.menu = [self.start_stop_button]
@@ -38,12 +38,12 @@ class CoffeeApp(object):
 
     def reset_timer(self):
         self.timer.count = 0
-        self.timer.end = self.interval
+        self.timer.end = self.interval_secs
 
     def start_timer(self, sender):
         if sender.title.lower().startswith("start"):
             self.timer.count = 0
-            self.timer.end = self.interval
+            self.timer.end = self.interval_secs
             sender.title = self.config["stop"]
             self.timer.start()
         else:
