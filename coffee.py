@@ -15,7 +15,7 @@ class CoffeeApp(object):
         self.interval = self.config["interval"]
         self.set_up_menu()
         self.start_stop_button = rumps.MenuItem(title=self.config["start"], callback=self.start_timer)
-        self.app.menu = [self.start_stop_button, self.stop_button]
+        self.app.menu = [self.start_stop_button]
 
     def set_up_menu(self):
         self.timer.stop()
@@ -30,8 +30,6 @@ class CoffeeApp(object):
         if mins == 0 and time_left < 0:
             self.on_prevent_sleep()
             self.reset_timer()
-        else:
-            self.stop_button.set_callback(self.stop_timer)
         sender.count += 1
     
     def on_prevent_sleep(self):
