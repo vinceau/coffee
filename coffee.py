@@ -24,7 +24,7 @@ class CoffeeApp(object):
         self.app.title = "☕️"
 
     def on_tick(self, sender):
-        print("tick")
+        # print("tick")
         time_left = sender.end - sender.count
         mins = time_left // 60 if time_left >= 0 else time_left // 60 + 1
         secs = time_left % 60 if time_left >= 0 else (-1 * time_left) % 60
@@ -34,7 +34,7 @@ class CoffeeApp(object):
         sender.count += 1
     
     def on_prevent_sleep(self):
-        print("on_prevent_sleep")
+        # print("on_prevent_sleep")
         pag.moveRel(1,1)
 
     def reset_timer(self):
