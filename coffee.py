@@ -1,6 +1,9 @@
 import pyautogui as pag
 import rumps
 
+mouse_x = 1
+mouse_y = 0
+
 class CoffeeApp(object):
     def __init__(self):
         self.config = {
@@ -35,7 +38,7 @@ class CoffeeApp(object):
     
     def on_prevent_sleep(self):
         # print("on_prevent_sleep")
-        pag.moveRel(1,1)
+        pag.moveRel(mouse_x, mouse_y)
 
     def reset_timer(self):
         self.timer.count = 0
