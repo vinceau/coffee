@@ -4,7 +4,7 @@ A simple [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=
 
 This app simulates activity by moving the mouse ever so subtly (by 1px), once every two minutes, thus preventing the computer from sleeping.
 
-### Pre-requisites
+### 0. Pre-requisites
 
 This package requires Python3 to be installed.
 
@@ -15,18 +15,22 @@ git clone https://github.com/vinceau/coffee
 cd coffee
 ```
 
+### 1. Install dependencies
 
-### Running the app
+```bash
+pip3 install -r requirements.txt
+```
+
+### 2. Running the app
 
 ```bash
 python3 coffee.py
 ```
 
 
-### Building the app
+### 3. Building the app (optional)
 
 ```bash
-pip3 install -r requirements.txt
 python3 setup.py py2app
 ```
 
